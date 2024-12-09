@@ -14,14 +14,16 @@
                 <h1 class="logo">I design & develop experiences that<br><span> make people's lives simple</span>
                 </h1>
              
-                <ul>
-                 <li> <a href="#">Home </a></li>
-                 <li> <a href="#">About </a></li>
-                 <li> <a href="#">My Education </a></li>
-                 <li> <a href="#">Portfolio </a></li>
-                 <li> <a href="#">Contact </a></li>
-                 
+                <ul id="sidemenu">
+                 <li> <a href="#header">Home </a></li>
+                 <li> <a href="#about">About </a></li>
+                 <li> <a href="#education">My Education </a></li>
+                 <li> <a href="#portfolio">Portfolio </a></li>
+                 <li> <a href="#contact">Contact </a></li>
+                 <i class="fa-solid fa-xmark" onclick="closemenu()" ></i>
                 </ul>
+               
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Front-End Developer</p>
@@ -158,7 +160,33 @@
         <a href="#" class="btn">See more</a>
     </div>
     <!-- =============================contact=============================== -->
-   
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>rishikasaudhan5152@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>7708094505</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="your Name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="Massage" rows="6" placeholder="Your Massage"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+     </div>
+
 </body>
 <script src="script.js"></script>
 </html>
